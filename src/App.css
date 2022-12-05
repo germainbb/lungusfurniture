@@ -18,7 +18,11 @@
   text-align: center;
   padding-top: 10px;
 }
-.name, .price{
+.name2{
+  font-size: large;
+  font-family: 'Marcellus SC', serif;
+}
+.price{
   font-size: large;
   font-family: 'Marcellus SC', serif;
 }
@@ -32,6 +36,8 @@
   margin: 10px;
   background-color: khaki;
   border-radius: 6px;
+  height: max-content;
+  /* width: ; */
 }
 
 .image{
@@ -96,6 +102,29 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.footer{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: darkolivegreen;
+    justify-content: space-around;
+    font-family: 'Turret Road', cursive;
+}
+.link{
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  /* background-color: springgreen; */
+  text-align: center;
+  border-radius: 60px;
+}
+.icons{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* justify-content: space-between; */
+}
 
 .App-link {
   color: #61dafb;
@@ -103,8 +132,8 @@
 @media screen and (max-width: 1024px) {
   .list{
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .name{
     font-size: large;
@@ -115,14 +144,18 @@
     font-family: 'Marcellus SC', serif;
   }
   .item{
+    /* display: flex;
+    flex: 1;
+    flex-direction: column; */
     margin: 10px;
     background-color: khaki;
     border-radius: 6px;
+    height: max-content;
   }
   
   .image{
     object-fit: cover;
-    width: 40%;
+    width: 90%;
     height: fit-content;
     border-radius: 6px;
   }
